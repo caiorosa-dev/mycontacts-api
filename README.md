@@ -2,10 +2,8 @@
 
 Simple API made with Express and PostgreSQL
 
-Run this command to download the modules
-`yarn` or `npm install`
+Run `yarn` or `npm install` to download the modules
 
-Execute the `src/database/schema.sql` into your PG database
+Execute `src/database/schema.sql` into your PG database
 
-Run this command to start the project
-`yarn dev` or `npm run dev`
+Run `yarn dev` or `npm run dev` to start the project
