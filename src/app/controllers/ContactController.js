@@ -26,8 +26,10 @@ class ContactController {
   // Create item
   async store(request, response) {
     const {
-      name, email, phone, category_id,
+      name, email, phone,
     } = request.body;
+
+    const category_id = request.body.category_id && request.body.category_id !== '' ? request.body.category_id : null;
 
     const contactExists = await ContactRepository.findByEmail(email);
     if (contactExists) {
@@ -46,8 +48,10 @@ class ContactController {
     const { id } = request.params;
 
     const {
-      name, email, phone, category_id,
+      name, email, phone,
     } = request.body;
+
+    const category_id = request.body.category_id && request.body.category_id !== '' ? request.body.category_id : null;
 
     const contactExists = await ContactRepository.findById(id);
 
