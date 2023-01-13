@@ -3,7 +3,7 @@ require('express-async-errors');
 
 const dotenv = require('dotenv');
 
-dotenv();
+dotenv.config();
 
 const routes = require('./routes');
 const errorHandler = require('./app/middlewares/errorHandler');
